@@ -4,6 +4,16 @@
 
 CRAN release: 2025-11-25
 
+- The hint to use
+  [`snapshot_download_gh()`](https://testthat.r-lib.org/reference/snapshot_download_gh.md)
+  is now only emitted when running in a job named “R-CMD-check”
+  ([\#2300](https://github.com/r-lib/testthat/issues/2300)).
+
+- [`expect_snapshot_file()`](https://testthat.r-lib.org/reference/expect_snapshot_file.md)
+  correctly reports file name if duplicated
+  ([@MichaelChirico](https://github.com/MichaelChirico),
+  [\#2296](https://github.com/r-lib/testthat/issues/2296)).
+
 - Fixed support for `shinytest2::AppDriver$expect_values()` screenshot
   snapshot failing on CI
   ([\#2293](https://github.com/r-lib/testthat/issues/2293),
